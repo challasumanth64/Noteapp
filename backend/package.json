@@ -1,0 +1,17 @@
+{
+  "name": "noteapp-backend",
+  "version": "1.0.0",
+  "description": "Backend for the NoteApp",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
