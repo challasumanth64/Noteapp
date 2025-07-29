@@ -22,6 +22,11 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// --- HEALTH CHECK / WELCOME ROUTE ---
+app.get("/", (req, res) => {
+  res.status(200).send("NoteApp API is running successfully!");
+});
+
 // --- API ROUTES ---
 // All auth-related routes will be prefixed with /api/auth
 app.use('/api/auth', authRoutes);
